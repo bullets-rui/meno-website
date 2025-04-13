@@ -1,6 +1,5 @@
 import Header from '../components/Header'
 import AnimatedTitle from '../components/AnimatedTitle';
-import Contact from '../components/Contact'
 import Footer_v2 from '../components/Footer_v2';
 
 export default function News() {
