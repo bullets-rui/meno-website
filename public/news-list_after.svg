@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="56" viewBox="0 0 232 56">
+  <g id="グループ_26" data-name="グループ 26" transform="translate(-1008 -3407)">
+    <rect id="長方形_13" data-name="長方形 13" width="232" height="56" rx="28" transform="translate(1008 3407)" fill="#00b4c8"/>
+    <g id="グループ_25" data-name="グループ 25" transform="translate(95 2452)">
+      <circle id="楕円形_1" data-name="楕円形 1" cx="21" cy="21" r="21" transform="translate(1093 962)" fill="#fff"/>
+      <path id="多角形_1" data-name="多角形 1" d="M9,0l9,16H0Z" transform="translate(1124 974) rotate(90)" fill="#00b4c8"/>
+    </g>
+    <text id="NEWS_LIST" data-name="NEWS LIST" transform="translate(1105 3442)" fill="#fff" font-size="20" font-family="Overpass-Medium, Overpass" font-weight="500" letter-spacing="0.2em"><tspan x="-65.965" y="0">NEWS LIST</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 232 56">
+  <!-- Generator: Adobe Illustrator 29.3.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 146)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #00b4c8;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+
+      .st1 {
+        font-family: Overpass-Medium, Overpass;
+        font-size: 20px;
+        font-weight: 500;
+        isolation: isolate;
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <g id="_グループ_26" data-name="グループ_26">
+    <path id="_長方形_13" data-name="長方形_13" class="st0" d="M28,0h176C219.5,0,232,12.5,232,28h0c0,15.5-12.5,28-28,28H28C12.5,56,0,43.5,0,28h0C0,12.5,12.5,0,28,0Z"/>
+    <path class="st2" d="M28,54.6c-14.7,0-26.6-11.9-26.6-26.6S13.3,1.4,28,1.4h176c14.7,0,26.6,11.9,26.6,26.6s-11.9,26.6-26.6,26.6H28Z"/>
+    <g id="_グループ_25" data-name="グループ_25">
+      <circle id="_楕円形_1" data-name="楕円形_1" class="st0" cx="201" cy="28" r="21"/>
+      <path id="_多角形_1" data-name="多角形_1" class="st2" d="M211,28l-16,9v-18l16,9Z"/>
+    </g>
+    <g id="NEWS_LIST">
+      <text class="st1" transform="translate(31 35)"><tspan x="0" y="0">NEWS LIST</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,101 +1,62 @@
-import Image from "next/image";
+import Header from './components/Header';
+import AnimatedTitle from './components/AnimatedTitle';
+import Service from './components/Service';
+import Works from './components/Works';
+import News from './components/News';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="opacity-0 animate-fade-in duration-500">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero セクション */}
+      <section className="text-[#00B4C8] px-15 pt-15 pb-30 space-y-4">
+        <div className="pb-15">
+          <img src="logo.svg" alt="ロゴ" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        
+        <AnimatedTitle text={`SPACE BRIDGE\n& SOLUTION\nCOMPANY`} />
+
+        <div className="text-8xl tracking-tighter pb-10">© Menō Ltd.</div>
+        <div className="flex">
+          <img className="-mt-6 mr-2" src="pin.svg" alt="ピン" />
+          <div className="text-xl tracking-tighter leading-5">
+            A. I. Nihombashi East 1F, 30-1 Nihonbashi-hakozaki-cho,<br />
+            Chuo-ku, Tokyo, 103-0015, JAPAN
+          </div>
+        </div>
+        <div className="text-xl text-right -mt-10 pb-16">
+          宇宙と人を繋げて未来を創造する会社
+        </div>
+      </section>
+
+      {/* ABOUT US セクション */}
+      <section id="aboutus"className="flex flex-col md:flex-row px-8 pb-16 md:px-20 text-[#00B4C8] gap-8 md:gap-20 items-start">
+        <h2 className="text-5xl font-bold whitespace-nowrap min-w-[200px] text-left leading-tight mr-12">
+          ABOUT US
+        </h2>
+        <div className="text-2xl leading-loose text-justify">
+          株式会社Menōは、「宇宙と人を繋げて未来を創造する」ことを使命に、衛星データの活用、宇宙環境試験の提供、地域社会の活性化（地方創生）を通じて、持続可能な社会の実現に向けて問題解決に取り組む会社です。
+        </div>
+      </section>
+
+      {/* VISION セクション */}
+      <section id="vision"className="flex flex-col md:flex-row px-8 md:px-20 text-[#00B4C8] gap-8 md:gap-20 items-start pb-30">
+        <h2 className="text-5xl font-bold whitespace-nowrap min-w-[200px] text-left leading-tight mr-12">
+          VISION
+        </h2>
+        <div className="text-2xl leading-loose text-justify">
+          Menōという社名には、多様な色が層になって調和する瑪瑙（めのう）石に由来しており、宇宙から地球、地域社会から個人に至るまで、人々と世界が共に発展するための架け橋となり、より良い持続可能な未来を切り拓くという理念が込められています。
+        </div>
+      </section>
+
+      <Service />
+      <section id="works"><Works /></section>
+      <News />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
