@@ -1,8 +1,3 @@
-type Props = {
-  text: string; // 改行したいところに \n を含めて渡す
-  className?: string;
-};
-
 const AnimatedTitle = ({ text }: { text: string }) => {
   const lines = text.split('\n');
 

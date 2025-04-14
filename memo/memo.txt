@@ -1,6 +1,8 @@
 【テストページ修正後の流れ】
 ①Gitに変更を反映↓
 
+cd meno-app
+
 git add .
 git commit -m "Fix: レスポンシブ調整とUI改善"
 git push origin main
