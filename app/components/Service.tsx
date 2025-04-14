@@ -7,11 +7,11 @@ const Service = () => {
   ];
 
   return (
-    <section className="bg-[#00B4C8] text-white py-30 pb-70 px-15 flex justify-between">
-      <h2 className="text-5xl font-bold">SERVICE</h2>
+    <section className="bg-[#00B4C8] text-white py-15 sm:py-30 pb-20 sm:pb-70 px-5 sm:px-15 md:flex md:justify-between block">
+      <h2 className="text-5xl font-bold mb-10 md:mb-0">SERVICE</h2>
 
-      <Link href="/service">
-        <div className="text-[50px] leading-14">
+      <Link href="/service" className="block w-full md:w-auto">
+        <div className="text-[32px] sm:text-[40px] md:text-[50px] leading-tight">
           {titles.map((title, index) => {
             const lines = title.split('<br/>');
 
@@ -20,15 +20,15 @@ const Service = () => {
                 key={index}
                 className={`
                   group 
-                  flex items-start space-x-6 
-                  border-t border-white py-10 
+                  flex flex-col md:flex-row md:items-start md:space-x-6 
+                  border-t border-white py-6 md:py-10 
                   transition-colors duration-300 
                   hover:bg-white 
                   ${index === 1 ? 'border-b' : ''}
                 `}
               >
                 {/* 番号 */}
-                <span className="text-[50px] whitespace-nowrap group-hover:text-[#00B4C8] transition-colors duration-300 ml-10">
+                <span className="text-[32px] sm:text-[40px] md:text-[50px] whitespace-nowrap group-hover:text-[#00B4C8] transition-colors duration-300 ml-0 md:ml-10 mb-2 md:mb-0">
                   {`0${index + 1}`}
                 </span>
 
@@ -41,20 +41,18 @@ const Service = () => {
                   </div>
 
                   {/* 通常時とホバー時の矢印を切り替える */}
-                  <div className="relative w-10 h-10 pl-50 mt-10">
-                    {/* 通常状態の矢印 */}
-                    <img
-                      src="/arrow.svg"
-                      alt="矢印"
-                      className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
-                    />
-                    {/* ホバー時の矢印 */}
-                    <img
-                      src="/arrow_after.svg"
-                      alt="矢印（ホバー時）"
-                      className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                    />
-                  </div>
+                    <div className="relative w-6 h-6 md:w-10 md:h-10 pl-16 md:pl-40 mt-6 md:mt-10">
+                      <img
+                        src="/arrow.svg"
+                        alt="矢印"
+                        className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+                      />
+                      <img
+                        src="/arrow_after.svg"
+                        alt="矢印（ホバー時）"
+                        className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                      />
+                    </div>
                 </div>
               </div>
             );

@@ -1,0 +1,16 @@
+【テストページ修正後の流れ】
+①Gitに変更を反映↓
+
+git add .
+git commit -m "Fix: レスポンシブ調整とUI改善"
+git push origin main
+
+② GitHubにpushされる
+GitHubのリポジトリページ（例: https://github.com/bullets-rui/meno-website）を開くと、反映されているのが確認できます。
+
+③Vercelで自動ビルド開始
+GitHubにpushされると、Vercelが自動で再ビルドを開始します。
+
+・Vercelのダッシュボードにアクセス → https://vercel.com/dashboard
+・meno-website プロジェクトを選択
+・「Production Deployment」という表示のビルドが自動的に始まります
